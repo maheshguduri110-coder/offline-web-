@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OfflineWeb AI — Offline Fallback</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --card: #0c1322;
+      --border: #1e3a5f;
+      --cyan: #00e5ff;
+      --text: #f0f6fc;
+      --muted: #94a3b8;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      max-width: 520px;
+      padding: 2.5rem;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 28px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    p {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <div class="icon">⚡</div>
+    <h1>You are Currently Offline</h1>
+    <p>
+      The specific URL or remote resource you requested is not cached. Your local <strong>OfflineWeb AI</strong> application, saved notes, documents, and tools remain available.
+    </p>
+    <a href="/" class="btn">Return to OfflineWeb AI</a>
+  </div>
+</body>
+</html>
